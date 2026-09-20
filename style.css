@@ -1,0 +1,485 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(18, 67, 105, 0.8),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #031321 0%,
+            #041827 45%,
+            #020c17 100%
+        );
+
+    color: #fff;
+
+    font-family: Arial, sans-serif;
+}
+body.light_mode{
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(220, 240, 255, 0.9),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #f8fcff 0%,
+            #eef7fc 50%,
+            #e5f1f8 100%
+        );
+
+    color: #102030;
+
+    font-family: Arial, sans-serif;
+}
+.Main{
+    background-color: #0b121c;
+    color: #fff !important;
+   height: 1550px;
+    width: 20%;
+    border-radius: 10px;
+}
+.app_name{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 20px;
+    font-family: "rubik";
+display: inline-flex;
+padding-top: 50px;
+padding-left: 60px;
+}
+.nova{
+ background: -webkit-linear-gradient(#00D4FF,#090979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "rubik";
+  font-size: 25px;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+}
+.hr{
+    height: 1px;
+    margin-top: 50px;
+margin-left: 70px;
+    width: 50%;
+    background-color: #1b2d47;
+}
+.ho{
+    font-size: 20px;
+
+}
+.card_loc{
+    width: 250px;
+    height: 150px;
+    background-color: #151c26;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.dashboard,.Search,.Location,.Map,.Setting{
+font-size:20px;
+    margin-top: 50px;
+    margin-left: 20px;
+
+    transition: 0.6s;
+}
+.dashboard:hover{
+    background-color: #1d294f;
+    width: 250px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 27px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.name_person{
+    float: left;
+   margin-left: 24%;
+   font-family: 'rubik';
+font-size: 25px;
+
+}
+.welcome{
+font-family: 'rubik';
+font-size: 15px;
+
+}
+.search-wrapper {
+    position: relative;
+    width: 300px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.search-input {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 50px 0 15px;
+
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 25px;
+
+    outline: none;
+    font-size: 16px;
+
+    background-color: #09101a;
+}
+
+.search-button {
+    position: absolute;
+
+    right: 5px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #09101a;
+color: #fff !important;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.settingh{
+    font-size: 20px;
+        margin-top: 30px;
+        color: #727781 !important;
+        cursor: pointer;
+        margin-right: 50px;
+float: right;
+}
+.mo{
+    font-size: 20px;
+        margin-top: 30px;
+        color: #727781 !important;
+        cursor: pointer;
+        margin-right: 150px;
+float: right;
+
+}
+.person_img{
+            margin-top: 20px;
+            margin-right: 50px;
+    float: right;
+    width: 50px;
+    height:50px;
+    border-radius: 99%;
+}
+/* .degree{
+    float: right;
+    width: 800px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    border-radius: 20px;
+} */
+ .degree {
+        float: right;
+    width: 800px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 350px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 25px;
+
+}
+.data{
+    padding: 30px;
+    color: #d5d2d2 !important;
+    font-size: 20px;
+}
+.status{
+        padding-top: 5px;
+        padding-left: 20px;
+
+    font-size: 35px;
+    text-shadow: 0px 0px 15px white;
+}
+.ctgrad{
+          padding-top: 30px;
+        padding-left:20px;
+
+    font-size: 90px;
+    text-shadow: 0px 0px 20px white;  
+}
+.loc{
+              padding-top: 30px;
+        padding-left:20px;
+    color: #c3c2c2 !important;
+    font-size: 20px;
+}
+.other{
+    float: right;
+    padding: 40px;
+}
+.wind,.humidity,.rain{
+
+    padding: 20px;
+    font-size: 17px;
+}
+.img_weather{
+float: right;
+padding-right: 50px;
+padding-top: 100px;
+}
+.img_weather{
+  animation: up-down linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down{
+  0% {
+    transform:  translate(1px,25px)  ;
+  }
+  24% {
+    transform:  translate(1px,35px)  ;
+  }
+  50% {
+    transform:  translate(1px,15px)  ;
+  }
+  74% {
+    transform:  translate(1px,25px)  ;
+  }
+  100% {
+    transform:  translate(1px,25px)  ;
+  }
+}
+
+@-moz-keyframes up-down{
+  0% {
+    -moz-transform:  translate(1px,25px)  ;
+  }
+  24% {
+    -moz-transform:  translate(1px,35px)  ;
+  }
+  50% {
+    -moz-transform:  translate(1px,15px)  ;
+  }
+  74% {
+    -moz-transform:  translate(1px,25px)  ;
+  }
+  100% {
+    -moz-transform:  translate(1px,25px)  ;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform:  translate(1px,25px)  ;
+  }
+  24% {
+    -webkit-transform:  translate(1px,35px)  ;
+  }
+  50% {
+    -webkit-transform:  translate(1px,15px)  ;
+  }
+  74% {
+    -webkit-transform:  translate(1px,25px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(1px,25px)  ;
+  }
+}
+
+@-o-keyframes up-down {
+  0% {
+    -o-transform:  translate(1px,25px)  ;
+  }
+  24% {
+    -o-transform:  translate(1px,35px)  ;
+  }
+  50% {
+    -o-transform:  translate(1px,15px)  ;
+  }
+  74% {
+    -o-transform:  translate(1px,25px)  ;
+  }
+  100% {
+    -o-transform:  translate(1px,25px)  ;
+  }
+}
+
+@-ms-keyframes up-down {
+  0% {
+    -ms-transform:  translate(1px,25px)  ;
+  }
+  24% {
+    -ms-transform:  translate(1px,35px)  ;
+  }
+  50% {
+    -ms-transform:  translate(1px,15px)  ;
+  }
+  74% {
+    -ms-transform:  translate(1px,25px)  ;
+  }
+  100% {
+    -ms-transform:  translate(1px,25px)  ;
+  }
+}
+.forecast-box {
+    width:100%;
+    max-width: 800px;
+
+    padding: 18px;
+
+    border-radius: 25px;
+
+    background: rgba(20, 42, 57, 0.75);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    /* backdrop-filter: blur(15px); */
+
+
+
+float: right;
+
+margin-right: 330px;
+
+margin-top: 30px;
+}
+
+
+/* Header */
+
+.forecast-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.forecast-header h2 {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.forecast-header span {
+    color: #8998a5 !important;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.forecast-header span:hover {
+
+}
+
+
+/* Rows */
+
+.forecast-table {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.forecast-row {
+    min-height: 50px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 60px 60px 50px;
+
+    align-items: center;
+
+    padding: 5px 0;
+
+
+
+    border-radius: 12px;
+
+    transition: 0.25s;
+}
+
+
+.forecast-row:hover {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* Day */
+
+.day {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Weather icon */
+
+.icon {
+    font-size: 24px;
+
+    text-align: center;
+}
+
+
+/* Maximum temperature */
+
+.forecast-row strong {
+    text-align: right;
+
+    font-size: 15px;
+
+
+}
+
+
+/* Minimum temperature */
+
+.low {
+    text-align: right;
+
+    font-size: 15px;
+
+    color: #82919d !important;
+}

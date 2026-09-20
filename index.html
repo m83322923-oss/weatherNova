@@ -1,0 +1,259 @@
+<html>
+    <head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    </head>
+    <body id="dark_light_mode" class="all">
+        <!-- <img src="desktop.jpg" style="width: 800px; height: 500px; margin-left:600px;"> -->
+         <!--header-->
+         <div class="header">
+    <div class="name_person">
+        <p class="welcome">Welcome home,</p>
+        Mobin Safari👋
+    </div>
+    <div>
+        <img src="https://i.pravatar.cc/100" class="person_img">
+    </div>
+    <div class="theme">
+        <i class="fa-solid fa-moon mo" id="dark" onclick="background_mode()"></i>
+    </div>
+                <div class="settingh">
+            <i class="fa-solid fa-gear"></i>
+            </div>
+<div class="search-wrapper">
+
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search City..."
+                    id="search"
+                >
+
+                <button class="search-button" id="search_btn" onclick="search()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+</div>
+
+<div class="degree">
+    <div class="other">
+<div class="wind" >
+Wind
+    <br>
+    <i class="fa-solid fa-wind"></i>
+    <div id="wind">
+10<span>m/s</span>
+</div>
+</div>
+<div class="humidity">
+    Humidity
+    <br>
+    <i class="fa-solid fa-droplet"></i>
+    <div id="humidity">
+90%
+</div>
+</div>
+<div class="rain">
+    Rain
+    <br>
+    <i class="fa-solid fa-cloud-rain"></i>
+98%
+</div>
+</div>
+    <div class="img_weather">
+<img src="img/WeatherIcon - 1-40.png">
+</div>
+
+
+<div class="data">
+23 August 2026
+</div>
+<div class="status" id="wheather">
+Cloudy
+</div>
+<div class="ctgrad" id="degree">
+18<img src="img/WeatherIcon - 1-1.png" style="width: 80px;">
+</div>
+<div class="loc">
+    <i class="fa-solid fa-location-dot "></i>
+    <div id="city">
+   Karaj
+   </div>
+   <div id="country">
+   ,Iran
+   </div>
+</div>
+
+</div>
+
+<div class="chart degree">
+  <canvas id="line"></canvas>
+</div>
+<div class="forecast-box">
+
+    <div class="forecast-header">
+        <h2>☀️ Day Forecast</h2>
+        <span>View all</span>
+    </div>
+
+    <div class="forecast-table">
+
+        <div class="forecast-row">
+            <span class="day">Mon</span>
+            <span class="icon">🌤️</span>
+            <strong>20°</strong>
+            <span class="low">16°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Tue</span>
+            <span class="icon">🌧️</span>
+            <strong>24°</strong>
+            <span class="low">16°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Wed</span>
+            <span class="icon">☁️</span>
+            <strong>22°</strong>
+            <span class="low">15°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Thu</span>
+            <span class="icon">🌤️</span>
+            <strong>26°</strong>
+            <span class="low">17°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Fri</span>
+            <span class="icon">🌧️</span>
+            <strong>21°</strong>
+            <span class="low">15°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Sat</span>
+            <span class="icon">☁️</span>
+            <strong>23°</strong>
+            <span class="low">16°</span>
+        </div>
+
+        <div class="forecast-row">
+            <span class="day">Sun</span>
+            <span class="icon">🌤️</span>
+            <strong>27°</strong>
+            <span class="low">18°</span>
+        </div>
+
+    </div>
+
+</div>
+<!--menu-->
+<div class="Main">
+<div class="app_name">
+ Weather<span class="nova">Nova</span> 
+ <div  class="logo">
+<img src="img/logo.png" class="logo">
+</div>
+ </div>  
+<div class="hr">
+</div>
+<div class="dashboard">
+<i class="fa-regular fa-house ho"></i>
+<span class="dashboard">Dashboard</span>
+</div>
+<div class="dashboard">
+<i class="fa-solid fa-magnifying-glass ho"></i>
+<span class="Search">Search</span>
+</div>
+<div class="dashboard">
+<i class="fa-solid fa-location-dot ho"></i>
+<span class="Location">Location</span>
+</div>
+<div class="dashboard">
+<i class="fa-regular fa-map ho"></i>
+<span class="Map">Map</span>
+</div>
+<div class="dashboard">
+<i class="fa-solid fa-gear ho"></i>
+<span class="Setting">Setting</span>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="card_loc">
+
+</div>
+</div>
+
+<script src="js/chart.js"></script>
+<script src="js/script.js">
+</script>
+    <script>
+const line= document.getElementById('line');
+
+new Chart(line, {
+
+  type: 'line',
+  data: {
+    labels: ['1398', '1399', '1400', '1401', '1402', '1403'],
+    datasets: [
+        
+    {
+      label: 'dollor',
+      data: [50000, 65000, 80000, 95000, 110000]   , 
+      cubicInterpolationMode: 'monotone',
+      tension: 0.4,
+     
+    } 
+
+
+]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    },
+    responsive: true,  
+  }
+});
+</script>
+    </body>
+</html>
